@@ -11,6 +11,7 @@ def get_token_id(file_name):
 
 def find_max_dpi(dict_in_search):
     max_dpi = 0
+    need_elem = 0
     for j in range(len(dict_in_search)):
         file_dpi = dict_in_search[j].get('width') * dict_in_search[j].get('height')
         if file_dpi > max_dpi:
